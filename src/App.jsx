@@ -268,7 +268,7 @@ export default function App() {
           onCopyLink={copyGameLink}
         />
 
-        <div className="sm: flex-col flex gap-8 mt-8">
+        <div className="flex sm:flex-row flex-col gap-8 mt-8">
           <div className="flex-1">
             <h2 className="text-2xl font-bold mb-4">Game Board</h2>
               <GameBoard
