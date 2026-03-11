@@ -268,17 +268,17 @@ export default function App() {
           onCopyLink={copyGameLink}
         />
 
-        <div className="flex gap-8 mt-8">
+        <div className="sm: flex-col flex gap-8 mt-8">
           <div className="flex-1">
             <h2 className="text-2xl font-bold mb-4">Game Board</h2>
-            <GameBoard
-              boardState={gameState.boardState}
-              subWinners={gameState.subWinners}
-              activeSubBoard={gameState.activeSubBoard}
-              onCellClick={handleMove}
-              gameFinished={gameState.status === 'finished'}
-            />
-          </div>
+              <GameBoard
+                boardState={gameState.boardState}
+                subWinners={gameState.subWinners}
+                activeSubBoard={gameState.activeSubBoard}
+                onCellClick={handleMove}
+                gameFinished={gameState.status === 'finished'}
+              />
+            </div>
 
           <div className="w-96">
             <h2 className="text-2xl font-bold mb-4">Macro Board</h2>
