@@ -5,8 +5,8 @@ import { createClient } from '@supabase/supabase-js';
 // VITE_SUPABASE_URL=your_supabase_url
 // VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
-const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
+const SUPABASE_URL = import.meta.env.NEXT_PUBLIC_SUPABASE_URL;
+const SUPABASE_ANON_KEY = import.meta.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
 if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
   console.warn('Supabase credentials not configured. Online play will not work.');
